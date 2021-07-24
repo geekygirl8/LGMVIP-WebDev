@@ -1,0 +1,148 @@
+.nopad{
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 12px 12px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  float: left;
+}
+
+.Navbar{
+  background-color: #CAF7E3;
+}
+
+.Navbar .brand{
+  font-size: 32px;
+  font-weight: 800;
+  color: #822659;
+}
+
+li a {
+  display: block;
+  color: #212121;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  color: #5806f0;
+  padding: 14px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #f865c7;
+  color: #111111;
+  border: 2px solid #E4BAD4;
+  float: right;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0.2, 0, 0.2);
+  transition: 0.5s;
+  width: 80%;
+  background-color: #8cd3fc;
+  color: #822659;
+  padding: 30px 20px;
+  border-radius: 10%;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 40px 50px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Navbar .brand {
+    font-size: 20px;
+  }
+  .container {
+    padding: 2px 16px;
+    font-size: 18px;
+  }
+  .email{
+    font-size: 12px;
+  }
+}
+* {
+  box-sizing: border-box;
+  word-break: break-all
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 600px) {
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+.loader {
+  border: 12px solid #822659;
+  border-top: 12px solid #E4BAD4;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 60s linear infinite;
+  transform: translate(-10%, -10%);
+  position: absolute;
+  left: 50%;
+  top: 40%;
+}
+
+@keyframes spin {
+  0% { transform:translate(-50%, -50%) rotate(0deg); }
+  25% { transform:translate(-40%, -40%) rotate(80deg); }
+  50% { transform:translate(-30%, -30%) rotate(160deg); }
+  75% { transform:translate(-20%, -20%) rotate(2480deg); }
+  100% { transform:translate(-10%, -10%) rotate(360deg); }
+}
